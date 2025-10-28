@@ -6,7 +6,6 @@
 
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body{
@@ -32,7 +31,6 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 0;
     z-index: 100;
 }
 
@@ -97,7 +95,6 @@ nav a{
     font-size: 1.3rem;
     font-weight: 400;
     text-decoration: none;
-    margin-top: 0rem;
     margin-left: 2rem;
     margin-right: 2rem;
     transition: all 0.1s ease;
@@ -116,13 +113,9 @@ nav a:active{
     transform: scale(0.9);
 }
 
-section{
-    min-height: 90vh;
-    padding: 5rem 9% 5rem;
-    padding-right: 0px;
+.upper-section{
+    min-height: 80vh;
     padding-left: 30px;
-    margin-right: 0px;
-    margin-left: 0px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -134,11 +127,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.welcome-section div h1{
-    font-size: 3rem;
-    font-weight: 800;
 }
 
 section .welcome-container h1{
@@ -160,12 +148,31 @@ section .side-bar {
     padding-right: 5px;
 }
 
+.lower-section{
+    background: rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(10px);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-section h1{
+    justify-content: start;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
 .containers{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     margin: 50px;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -181,7 +188,7 @@ section .side-bar {
     justify-content: center;
     align-items: center;
     color: white;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
 }
 
 .card:hover{
@@ -325,12 +332,11 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 2rem;
     padding-bottom: 0rem;
-    margin-bottom: 0rem;
     background: rgba(0, 0, 0, 0.089);
     backdrop-filter: blur(10px);
 }
