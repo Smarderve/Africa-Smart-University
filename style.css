@@ -120,12 +120,25 @@ section{
     min-height: 90vh;
     padding: 5rem 9% 5rem;
     padding-right: 0px;
-    padding-left: 50px;
+    padding-left: 30px;
     margin-right: 0px;
     margin-left: 0px;
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.welcome-section{
+    min-height: 20vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section div h1{
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 section .welcome-container h1{
@@ -155,7 +168,7 @@ section .side-bar {
     margin: 50px;
 }
 
-.container{
+.card{
     background: rgba(0, 0, 0, 0.089);
     backdrop-filter: blur(10px);
     border-radius: 20%;
