@@ -147,6 +147,28 @@ section .side-bar {
     padding-right: 5px;
 }
 
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(10px);
+    border-radius: 20%;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 form{
     display: flex;
     flex-direction: column;
