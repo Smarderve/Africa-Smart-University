@@ -286,8 +286,34 @@ footer{
     backdrop-filter: blur(10px);
 }
 
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
 .social-icons a{
     text-decoration: none;
+}
+
+.social-icons a svg{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a svg:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px black;
+}
+
+.social-icons a svg:active{
+    transform: scale(0.9);
 }
 
 @media (max-width: 768px){
